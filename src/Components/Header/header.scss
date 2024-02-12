@@ -1,0 +1,44 @@
+@import '../../style/style.scss';
+
+.app {
+    &_header {
+        display: flex;
+        justify-content: space-around; // Используем space-between для равномерного распределения пространства
+        align-items: center; // Выравнивание элементов по центру по вертикали
+        margin-top: 20px;
+        padding: 10px;
+    }
+    &_title {
+       a {
+        color: #005CBF;
+        text-shadow:
+        -1px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000, /* Создание эффекта обводки */
+        0px 0px 5px rgba(0, 0, 0, 0.5);
+       } 
+        span {
+            color: rgb(255, 107, 0);
+        }
+    }   
+    &_menu {
+        font-size: 25px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+        }
+    }
+    &_link {
+    color: white;
+    font-size: 25px;
+    text-shadow:
+    -1px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000, /* Создание эффекта обводки */
+        0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+}

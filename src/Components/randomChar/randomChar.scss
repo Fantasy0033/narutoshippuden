@@ -1,0 +1,104 @@
+@import '../../style/style.scss';
+
+p {
+    color:black;
+}
+
+.randomchar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 
+    -10px 0 20px rgba(160, 32, 240, 0.5), /* Левая желтая тень */
+    10px 0 20px rgba(255, 165, 0, 0.5);
+    width: 70%;
+    height: 235px;
+    backdrop-filter: blur(10px);
+    &_block {
+        margin-right: 10px;
+        margin-top: 3%;
+        width: 50%;
+    }
+    &_name {
+        font-size: 24px;
+        color: rgb(160, 32, 240);
+        text-shadow:
+    -1px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000, /* Создание эффекта обводки */
+        0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    &_descr {
+        font-size: 12px;
+        margin-top: 10px;
+        width: 100%;
+        color: rgb(160, 32, 240);
+        text-shadow:
+    -1px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000, /* Создание эффекта обводки */
+        0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    &_main {
+        width: 40px;
+        height: 40px;
+    }
+    &_img {
+        width: 180px;
+        height: 160px;
+        margin-right: 15px;
+        object-fit: cover;
+        border: 2px solid #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        float: left;
+    }
+    &_imgnaruto {
+        width: 180px;
+        height: 180px;
+        cursor: pointer;
+    }
+    &_static {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &_decoration {
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        right: 4px;
+        top: 121px;
+    }
+    &_title {
+        font-size: 22px;
+        margin-top: 55px;
+        color: red;
+        text-shadow:
+    -1px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000, /* Создание эффекта обводки */
+        0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.button_mains {
+    display: flex;
+    align-items:flex-end;
+    margin-top: 20px;
+    height: 88px;
+}
+
+.button_main {
+    font-size: 15px;
+    width: 110px;
+    height: 33px;
+    margin-left: 20%;
+}
+
+.button_random {
+    margin-top: 45px;
+}
