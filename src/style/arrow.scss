@@ -1,0 +1,106 @@
+
+.arrow-hover_left {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-hover_left div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 3px 5px rgb(255, 165, 0);
+    left:0;
+    display: block;
+}
+.arrow-hover_left div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: rgb(255, 165, 0);
+    transform: rotate(133deg);
+}
+.arrow-hover_left div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(43deg);
+}
+.arrow-hover_left:hover {
+    animation: arrow-hover_left 1s linear infinite;
+}
+@keyframes arrow-hover_left {
+    0% {
+        left:0;
+    }
+    50% {
+        left:-10px;
+    }
+    100% {
+        left:0;
+    }
+}
+
+.arrow-hover_right {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+    rotate: 45%;
+}
+.arrow-hover_right div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 3px 5px rgb(255, 165, 0);
+    left:0;
+    display: block;
+}
+.arrow-hover_right div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: rgb(255, 165, 0);
+    transform: rotate(45deg);
+}
+.arrow-hover_right div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.arrow-hover_right:hover {
+    animation: arrow-hover_right 1s linear infinite;
+}
+@keyframes arrow-hover_right {
+    0% {
+        left:0;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
+    }
+}
+
