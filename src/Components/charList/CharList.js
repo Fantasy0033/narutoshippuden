@@ -1,5 +1,6 @@
 import './charList.scss';
 import img from '../../resources/img/Amachi.webp';
+import arrow from '../../resources/img/kynai.png';
 
 const CharList = () => {
     return (
@@ -26,12 +27,17 @@ const CharList = () => {
             </li>
         </div>
         <div className="char_arrow">
-            <div className="arrow-hover_left">
-                <div></div>
+
+            <div className="char_arrow_left">
+                <img src={arrow} alt="arrow_left" className="char_arrow_leftkon" />
             </div>
-            <div className="arrow-hover_right">
-                <div></div>
+
+            <div className="char_arrow_count">1</div>
+            
+            <div className="char_arrow_right">
+            <img src={arrow} alt="arrow_right" className="char_arrow_rightkon" />
             </div>
+
         </div>
 
     </div>

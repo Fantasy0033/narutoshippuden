@@ -1,5 +1,5 @@
 @import '../../style/style.scss';
-@import '../../style/arrow.scss';
+/* @import '../../style/arrow.scss'; */
 
 .char {
     &_list {
@@ -58,11 +58,43 @@
     }
     &_arrow {
         display: flex;
-        justify-content: center;
-        align-items:flex-end;
-        width: 100%;
-        height: 100%;
-        margin: 73px -166px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(26% - 20px); /* учитываем padding */
+        padding: 0 10px;
+
+        &_left {
+            margin-top: 8px;
+        }
+        &_count {
+            width: 20%;
+            height: 20px;
+            margin-left: 42px;
+            font-size: 30px;
+            color: white;
+            text-shadow:
+            -1px -2px 0 #000,  
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000, /* Создание эффекта обводки */
+            0px 0px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 22px;
+        }
+        &_rightkon {
+            transform: rotate(180deg);
+            width: 130px;
+            height: 50px;
+            cursor: pointer;
+        }
+        &_leftkon {
+            width: 130px;
+            height: 50px;
+            cursor: pointer;
+        }
     }
 }
 
