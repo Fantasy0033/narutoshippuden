@@ -1,16 +1,18 @@
 import Header from '../Header/header';
-import bg from '../../resources/img/bg.jpg';
 
-import MainPage from '../pages/MainPage';
+/* import MainPage from '../pages/MainPage'; */
+/* import Akatsuki from '../pages/AkatsukiPage'; */
+import SingleCharPage from '../pages/SingleCharPage';
 
 function App() {
   return (
       <div>
         <Header/>
         <main>
-            <MainPage/>
+{/*             <MainPage/> */}
+{/*             <Akatsuki/> */}
+            <SingleCharPage/>
         </main>
-        <img className='bg' src={bg} alt='vision'/>
       </div>
   );
 }

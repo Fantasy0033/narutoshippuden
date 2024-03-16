@@ -9,10 +9,10 @@ const Header = () => {
             <nav className="app_menu">
                 <ul>
                     <li>
-                        <a href="#" className="app_link">Персонажи / </a>
+                        <a href="#" className="app_link"> Все Персонажи / </a>
                     </li>
                     <li>
-                        <a href="#" className="app_link">Хвостатые звери</a>
+                        <a href="#" className="app_link">Акацуки</a>
                     </li>
                 </ul>
             </nav>
