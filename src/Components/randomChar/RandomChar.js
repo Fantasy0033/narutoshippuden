@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
 import './randomChar.scss';
 import znak from '../../resources/img/znak.png';
 import naruto from '../../resources/img/znak 2.png';
@@ -28,7 +30,10 @@ const RandomChar = () => {
     }
 
     const errorMessage = error ? <ErrorMessage/> : null;
-    const spinner = loading ? <Spinner/> : null;
+    const spinnerStyle = {
+        margin: '15px 387.5px 0 0' // Настройка стилей спиннера, чтобы центрировать его
+      };
+    const spinner = loading ? <Spinner style={spinnerStyle} color='#00000'/> : null;
     const content = !(loading || error) ? <View char={char}/> : null;
  
     
@@ -37,14 +42,6 @@ const RandomChar = () => {
             {errorMessage}
             {spinner}
             {content}
-{/*             <div className="randomchar_block">
-                <img src={img} alt="img" className='randomchar_img'/>
-                <p className="randomchar_name">Name</p>
-                <p className="randomchar_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div className='button button_mains'>
-                    <button className="button button_main">Информация</button>
-                </div>
-            </div> */}
 
             <div className="randomchar_static">
                 <p className="randomchar_title">Рандомный персонаж Naruto</p>
@@ -58,16 +55,19 @@ const RandomChar = () => {
 
 const View = ({char}) => {
     const {id, name, image, jutsu} = char;
-
+    const shortDescription = jutsu && jutsu.length > 100 ? jutsu.slice(0, 100) + '...' : jutsu;
     return (
-        <div className="randomchar_block">
+        <motion.div 
+        className="randomchar_block"
+        initial={{ x: -50 }}
+        animate={{ x: 0 }}>
             <img src={image} alt="img" className='randomchar_img'/>
             <p className="randomchar_name">{name}</p>
-            <p className="randomchar_descr">{jutsu}</p>
-            <div className='button button_mains'>
+            <p className="randomchar_descr">{shortDescription}</p>
+            <Link to={`/character/${id}`} className='button button_mains'>
                 <button className="button button_main">Информация</button>
-            </div>
-        </div>
+            </Link>
+        </motion.div>
     )
 } 
 

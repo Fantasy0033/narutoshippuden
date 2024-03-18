@@ -4,7 +4,6 @@
 .char {
     &_list {
         margin-top: 30px;
-        display: grid;
         grid-template-columns: 650px 425px;
         column-gap: 30px;
         align-items: start;
@@ -34,7 +33,6 @@
     }
     &_name {
         backdrop-filter: blur(10px);
-        font-size: 20px;
         color: rgb(160, 32, 240);
         text-shadow:
         -1px -2px 0 #000,  
@@ -45,7 +43,7 @@
         text-align: center;
         &_yellow {
         backdrop-filter: blur(10px);
-        font-size: 25px;
+        font-size: 22px;
         color: rgb(255, 165, 0);
         text-shadow:
         -1px -2px 0 #000,  
@@ -97,4 +95,8 @@
         }
     }
 }
+
+/* .spinner {
+    margin: 15px 15px 15px 685px;
+} */
 
