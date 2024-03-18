@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.afbc0cd4.css",
+    "main.js": "/static/js/main.2938afb5.js",
+    "static/js/592.7f72a991.chunk.js": "/static/js/592.7f72a991.chunk.js",
+    "static/media/bg.jpg": "/static/media/bg.acb12b8aaa20627adeb3.jpg",
+    "static/media/znak.png": "/static/media/znak.4bbe6a0ceb81edbb898e.png",
+    "static/media/znak 2.png": "/static/media/znak 2.8fdcb3dd7cefc00c8c87.png",
+    "static/media/Akatsuki3.jpg": "/static/media/Akatsuki3.c91f6f5455ea7799d1fe.jpg",
+    "static/media/bg3.png": "/static/media/bg3.2d8cf76a66568d437279.png",
+    "static/media/ninjanarutorus.ttf": "/static/media/ninjanarutorus.713062a06de2dedf0ed5.ttf",
+    "static/media/kynai.png": "/static/media/kynai.2d4ef067c2a7bca4b404.png",
+    "index.html": "/index.html",
+    "main.afbc0cd4.css.map": "/static/css/main.afbc0cd4.css.map",
+    "main.2938afb5.js.map": "/static/js/main.2938afb5.js.map",
+    "592.7f72a991.chunk.js.map": "/static/js/592.7f72a991.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afbc0cd4.css",
+    "static/js/main.2938afb5.js"
+  ]
+}
