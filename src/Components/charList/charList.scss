@@ -28,13 +28,13 @@
         }
     }
     &_img {
-        width: 200px;
+        width: 250px;
         height: 230px;
-        object-fit: cover;
+/*         object-fit: cover; */
     }
     &_name {
         backdrop-filter: blur(10px);
-        font-size: 25px;
+        font-size: 20px;
         color: rgb(160, 32, 240);
         text-shadow:
         -1px -2px 0 #000,  

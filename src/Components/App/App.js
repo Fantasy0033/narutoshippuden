@@ -1,6 +1,6 @@
 import Header from '../Header/header';
 
-/* import MainPage from '../pages/MainPage'; */
+import MainPage from '../pages/MainPage';
 /* import Akatsuki from '../pages/AkatsukiPage'; */
 import SingleCharPage from '../pages/SingleCharPage';
 
@@ -9,9 +9,9 @@ function App() {
       <div>
         <Header/>
         <main>
-{/*             <MainPage/> */}
+            <MainPage/>
 {/*             <Akatsuki/> */}
-            <SingleCharPage/>
+{/*             <SingleCharPage/> */}
         </main>
       </div>
   );
