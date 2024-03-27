@@ -106,3 +106,59 @@ p {
 .button_random {
     margin-top: 45px;
 }
+
+
+@media screen and (max-width: 415px) { 
+    .randomchar {
+        &_block {
+            margin-left: 36px;
+        }
+        &_img {
+            width: 115px;
+            height: 104px;
+        }
+        &_title {
+            font-size: 16px;
+            margin-top: 48px;
+        }
+        &_descr {
+            width: 95%;
+        }
+        &_decoration {
+            display: none;
+        }
+        &_static {
+            animation: fadeInAnimation 1s ease-in forwards;
+        }
+        @keyframes fadeInAnimation {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+    }
+    .button_mains {
+        vertical-align:auto;
+        height: 17px;
+    }
+    .button_main {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1800px) { 
+    .randomchar {
+        height: 300px;
+        &_block {
+            margin-top: 5%;
+        }
+        &_static {
+            margin-top: 61px;
+        }
+        &_decoration {
+            top: 154px;
+        }
+    }
+}

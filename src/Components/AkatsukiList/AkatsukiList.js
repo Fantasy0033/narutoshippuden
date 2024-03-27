@@ -46,15 +46,15 @@ const AkatsukiList = () => {
                   animate='visible'
                    custom={i}>
                                 <Link to={`/character/${item.id}`} 
-                className="char_item" key={item.id}>
-                <img src={item.image} alt="img" className="char_img" />
-                <div className="char_name">{item.name}</div>
+                className="akatsuki_item" key={item.id}>
+                <img src={item.image} alt="img" className="akatsuki_img" />
+                <div className="akatsuki_name">{item.name}</div>
             </Link>
             </motion.div>
             )
         })
         return (
-            <div className="char_grid">
+            <div className="akatsuki_grid">
                 {items}
             </div>
         )
@@ -71,12 +71,12 @@ const AkatsukiList = () => {
 
     return (
         <div>
-            <div className="char_list">
+            <div className="akatsuki_list">
                 {spinner}
                 {errorMessage}
                 {items}
-                <div onClick={() => onRequest(offset)} className="char_button">
-                        <div className="char_inner">load more</div>
+                <div onClick={() => onRequest(offset)} className="akatsuki_button">
+                        <div className="akatsuki_inner">load more</div>
                 </div>
             </div>
         </div>

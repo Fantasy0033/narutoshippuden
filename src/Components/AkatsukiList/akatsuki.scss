@@ -1,6 +1,6 @@
 @import '../../style/style.scss';
 
-.char {
+.akatsuki {
     &_list {
         align-items: start;
         padding-bottom: 50px;
@@ -81,4 +81,30 @@
         transform: translateY(-2px);
       }
 /*       rgb(154, 18, 138) */
+}
+
+
+@media screen and (max-width: 714px) {
+    /* CSS правила для мобильных устройств */
+    .akatsuki {
+        &_grid {
+            grid-template-columns: repeat(1, 200px);
+            margin-top: 45px;
+            margin-left: 109px;
+        }
+    }
+}
+
+@media screen and (max-width: 361px) {
+    /* CSS правила для мобильных устройств */
+    .akatsuki {
+        &_grid {
+            grid-template-columns: repeat(1, 200px);
+            margin-top: 20px;
+            margin-left: 79px;
+        }
+        &_inner {
+
+        }
+    }
 }

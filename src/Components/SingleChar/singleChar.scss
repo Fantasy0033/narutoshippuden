@@ -59,3 +59,33 @@
         margin-top: 18px;
     }
 }
+
+@media screen and (max-width: 415px) { 
+    .single {
+        font-size: 20px;
+        margin: 16px 0 0px 15px;
+    }
+    .single_comic {
+        display: block;
+        margin-left: 16%;
+        margin-right: 0;
+        &_info {
+            width: 52%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) { 
+    .single {
+        font-size: 20px;
+        margin: 16px 0 0px 15px;
+    }
+    .single_comic {
+        display: block;
+        margin-left: 10%;
+        margin-right: 0;
+        &_info {
+            width: 52%;
+        }
+    }
+}

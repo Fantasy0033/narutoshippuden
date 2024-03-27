@@ -42,3 +42,36 @@
         0px 0px 5px rgba(0, 0, 0, 0.5);
     }
 }
+
+@media screen and (max-width: 361px) {
+    /* CSS правила для мобильных устройств */
+    .app {
+        &_header {
+            display: flex;
+            justify-content: center;
+        }
+        &_link {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        &_menu {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 415px) { 
+    .app {
+        &_header {
+            display: flex;
+            justify-content: center;
+        }
+        &_link {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        &_menu {
+            font-size: 30px;
+        }
+    }
+}
